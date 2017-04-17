@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5;
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.25;
+	font-weight: bold;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url("../images/moto.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header .logo-bar {
+	background-color: black;
+}
+
+header .logo-bar .container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+header .logo-bar img {
+	margin: 0 1rem 0 0.5rem;
+	width: auto;
+	height: 1.5rem;
+}
+
+header .logo-bar span {
+	color: white;
+	text-transform: uppercase;
+	margin: .66rem 0;
+}
+
+header .callout {
+	height: 25rem;
+}
+
+header .callout .callout-text {
+	width: 26rem;
+	padding: 2rem 3rem;
+	background-color: black;
+	position: relative;
+	top: 9rem;
+}
+
+header .callout .callout-text h1, h2 {
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header .callout .callout-text h1 {
+	font-size: 2rem;
+}
+
+header .callout .callout-text h2 {
+	font-size: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+header .links {
+	background-color: firebrick;
+	padding: 0.75rem 0;
+}
+
+header .links nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .links nav a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	padding: 3rem 0 4rem 0;
+}
+
+main .items {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+main .items .item {
+	margin-bottom: 3rem;
+	width: 30%;
+}
+
+main .items .item .item-image {
+	padding: 2rem;
+	height: 13rem;
+	border: 4px solid black;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .items .item .item-image img {
+	max-width: 8rem;
+	height: auto;
+	display: block;
+}
+
+main .items .item .item-name {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+main .info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+main .info .location, .hours {
+	width: 35%;
+}
+
+main .info h3 {
+	font-size: 1rem;
+	font-weight: normal;
+	color: white;
+	background-color: black;
+	padding: 1rem 2rem;
+}
+
+footer {
+	background-color: black;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+footer p {
+	color: white;
+}
+
+@media only screen and (min-width: 1025px) {
+	.hide-lg {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	header .links nav {
+		justify-content: center;
+	}
+
+	main .items .item {
+		width: 47%;
+	}
+
+	.hide-med {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	header .callout {
+		height: 15rem;
+	}
+
+	header .callout .callout-text {
+		width: 100%;
+		padding: 1rem 2rem;
+		top: 10rem;
+	}
+
+	header .callout .callout-text h1 {
+		font-size: 1rem;
+	}
+
+	header .callout .callout-text h2 {
+		font-size: 0.77rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.hide-sm {
+		display: none;
+	}
+
+	main .items, main .info {
+		justify-content: center;
+	}
+
+	main .items .item {
+		width: 90%;
+	}
+
+	main .info .location, .hours {
+		width: 90%;
+		margin-bottom: 0.5rem;
+	}
+
+	footer {
+		justify-content: center;
+	}
+}
